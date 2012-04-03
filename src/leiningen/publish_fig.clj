@@ -3,6 +3,7 @@
   (:use clojure.java.shell))
 
 (defn publish-fig [project & args]
+  (leiningen.clean/clean project)
   (leiningen.jar/jar project)
   (when-not (.exists (clojure.java.io/file "package.fig"))
     (spit "package.fig" (str "resource \"" (:jar-name project) "\"\n\nconfig default\n"
