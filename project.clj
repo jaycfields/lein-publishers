@@ -1,4 +1,4 @@
-(defproject lein-publishers "1.0.4"
+(defproject lein-publishers "1.0.5"
   :description "publish to various repos using lein"
   :eval-in-leiningen true
   :jar-name lein-publishers.jar
