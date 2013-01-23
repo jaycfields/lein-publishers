@@ -1,5 +1,5 @@
 (ns leiningen.publish-fig
-  (:require leiningen.jar clojure.java.io)
+  (:require leiningen.jar leiningen.clean clojure.java.io)
   (:use clojure.java.shell))
 
 (defn publish-fig [project & args]
@@ -14,5 +14,3 @@
   (let [response (apply sh "fig" "--publish" (str (:name project) "/" (:version project)) args)]
     (println "OUT:" (:out response))
     (println "ERR:" (:err response))))
-
-
