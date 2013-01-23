@@ -6,11 +6,11 @@ A leiningen plugin to automate publishing jars to repositories
 
 In your project.clj:
 
-    :dev-dependencies [[lein-publishers "1.0.6"]]
+    :dev-dependencies [[lein-publishers "1.0.7"]]
 
 or install as a plugin:
 
-    $ lein plugin install lein-publishers "1.0.6"
+    $ lein plugin install lein-publishers "1.0.7"
 
 To publish to clojars
 

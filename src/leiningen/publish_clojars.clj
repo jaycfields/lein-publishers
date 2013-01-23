@@ -1,5 +1,5 @@
 (ns leiningen.publish-clojars
-  (:require leiningen.jar)
+  (:require leiningen.jar leiningen.clean leiningen.pom)
   (:use clojure.java.shell))
 
 (defn publish-clojars [project & args]
