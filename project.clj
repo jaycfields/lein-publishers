@@ -1,5 +1,5 @@
-(defproject lein-publishers "1.0.7"
-  :description "publish to various repos using lein"
+(defproject lein-publishers "1.0.9"
+  :description "publish to fig using lein"
   :eval-in-leiningen true
-  :jar-name lein-publishers.jar
-  :dependencies [[org.clojure/clojure "1.3.0"]])
+  :source-paths ["src"]
+  :jar-name "lein-publishers.jar")

@@ -1,4 +1,4 @@
-(ns leiningen.tasks.publish-fig
+(ns leiningen.publish-fig
   (:require clojure.java.io)
   (:use clojure.java.shell))
 
@@ -8,7 +8,7 @@
                              "  append CLASSPATH=@/" (:jar-name project) "\n"
                              "  append SOURCEPATH=@/" (:jar-name project) "\n"
                              "end")))
-  (println "sh" "fig" "--publish" (str (:name project) "/" (:version project)) args)
+  (apply println "sh" "fig" "--publish" (str (:name project) "/" (:version project)) args)
   (let [response (apply sh "fig" "--publish" (str (:name project) "/" (:version project)) args)]
     (println "OUT:" (:out response))
     (println "ERR:" (:err response))))
