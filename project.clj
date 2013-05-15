@@ -1,4 +1,4 @@
-(defproject lein-publishers "1.0.9"
+(defproject lein-publishers "1.0.10"
   :description "publish to fig using lein"
   :eval-in-leiningen true
   :source-paths ["src"]
