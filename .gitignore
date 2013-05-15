@@ -8,3 +8,4 @@
 /.lein-deps-sum
 package.fig
 .fig
+/target
