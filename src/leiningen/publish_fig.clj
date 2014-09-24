@@ -11,4 +11,5 @@
   (apply println "sh" "fig" "--publish" (str (:name project) "/" (:version project)) args)
   (let [response (apply sh "fig" "--publish" (str (:name project) "/" (:version project)) args)]
     (println "OUT:" (:out response))
-    (println "ERR:" (:err response))))
+    (println "ERR:" (:err response)))
+  (sh "git" "tag" (:version project) "-m" (str "Release " (:version project))))
