@@ -10,7 +10,7 @@
                   ["vcs" "commit"]
                   ;; ["vcs" "tag"] would like to have this, but it requires we all set up gpg keys to sign tag objects.
                   ["jar"]
-                  ["deploy"]
+                  ["deploy" "clojars"]
                   ["change" "version" "leiningen.release/bump-version"]
                   ["vcs" "commit"]
                   ["vcs" "push"]])
